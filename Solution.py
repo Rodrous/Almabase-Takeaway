@@ -128,7 +128,7 @@ async def main():
     solutionObj = Solution()
     results = await asyncio.gather(
         solutionObj.find_duplicates(profiles=[profile_1, profile_2], fields=["first_name", "last_name"]),
-        solutionObj.find_duplicates(profiles=[profile_3,profile_4], fields=["first_name", "last_name","email_field", "class_year", "dete_of_birth"])
+        solutionObj.find_duplicates(profiles=[profile_3,profile_4], fields=["first_name", "last_name","email_field", "class_year", "date_of_birth"])
 
 
     )
